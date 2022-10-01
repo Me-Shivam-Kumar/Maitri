@@ -16,7 +16,11 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,6 +28,7 @@ import retrofit2.Response;
 
 public class NetworkCalls {
     public static List<BooksModel> newArrivalsModelList=new ArrayList<>();
+    public static Set<String> set = new HashSet<String>();
     public static List<NewArrivalsModel> availableBooks=new ArrayList<>();
     public static List<IssuedBooksModel> issuedBooksModelList=new ArrayList<>();
     public static List<BooksModel> booksModelList=new ArrayList<>();
@@ -42,13 +47,19 @@ public class NetworkCalls {
                 if (task.isSuccessful()) {
                     loadingDialog.hideDialog();
                     for (DocumentSnapshot snapshot : task.getResult()) {
-                        newArrivalsModelList.add(new BooksModel(snapshot.getString("bookName"),
-                                snapshot.getString("bookDescription"),
-                                snapshot.getString("imageLink"),
-                                snapshot.getString("noOfPages"),
-                                snapshot.getString("rating"),
-                                snapshot.getString("authorName")));
+                        if(!set.contains(snapshot.getString("bookName"))){
+                            newArrivalsModelList.add(new BooksModel(snapshot.getString("bookName"),
+                                    snapshot.getString("bookDescription"),
+                                    snapshot.getString("imageLink"),
+                                    snapshot.getString("noOfPages"),
+                                    snapshot.getString("rating"),
+                                    snapshot.getString("authorName")));
+                            set.add(snapshot.getString("bookName"));
+                        }
+
+
                     }
+
                     HomeFragment.newArrivalsAdapter.notifyDataSetChanged();
                 } else {
                     loadingDialog.hideDialog();

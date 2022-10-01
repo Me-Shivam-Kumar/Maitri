@@ -66,7 +66,7 @@ public class OnBoardingActivity extends AppCompatActivity {
             editor.putString("shown","shown");
             editor.apply();
         }else{
-             pref=getSharedPreferences("CustomerPref", Context.MODE_PRIVATE);
+             SharedPreferences preff=getSharedPreferences("CustomerPref", Context.MODE_PRIVATE);
 
             String emaill=pref.getString("aadharCardNumber",NULL);
             if(emaill!=NULL){
@@ -78,14 +78,14 @@ public class OnBoardingActivity extends AppCompatActivity {
 
 
         }
-        finish();
+
 
     }
     private void setupOnBoardingItem(){
         List<OnBoardingItem> onBoardingItems=new ArrayList<>();
         OnBoardingItem item1=new OnBoardingItem();
         item1.setTitle("Ait Library Management App");
-        item1.setDescription("Developed By An Aitian For An Aitian");
+        item1.setDescription("Developed By An Aitian For The Aitians");
         item1.setImage(R.drawable.ait_pune_logo);
         OnBoardingItem item2=new OnBoardingItem();
         item2.setTitle("Learn More, Grow More");

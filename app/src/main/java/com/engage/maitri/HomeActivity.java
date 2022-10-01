@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //Add Menu Item
         botBottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home));
-        botBottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_list));
+        botBottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_issued_books));
         botBottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_list));
         botBottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_profile));
 
