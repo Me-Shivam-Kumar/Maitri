@@ -58,28 +58,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView14">
 
             <RadioButton
-                android:id="@+id/farmer_radioBtn"
+                android:id="@+id/daily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Daily" />
 
             <RadioButton
-                android:id="@+id/consumer_radioBtn"
+                android:id="@+id/two_three_times"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Two/Three Times in a Week" />
             <RadioButton
+                android:id="@+id/weekly"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Weekly"
                 />
             <RadioButton
+                android:id="@+id/monthly"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Monthly"
                 />
             <RadioButton
+                android:id="@+id/rarely"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rarely"
@@ -107,28 +110,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView15">
 
             <RadioButton
-
+                android:id="@+id/excellent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Excellent" />
 
             <RadioButton
-
+                android:id="@+id/very_good1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Very Good" />
             <RadioButton
+                android:id="@+id/good1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good"
                 />
             <RadioButton
+                android:id="@+id/satisfactory1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Satisfactory"
                 />
             <RadioButton
+                android:id="@+id/unSatisfactory1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unsatisfactory"
@@ -156,28 +162,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16">
 
             <RadioButton
-
+                android:id="@+id/excellent2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Excellent" />
 
             <RadioButton
-
+                android:id="@+id/very_good2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Very Good" />
             <RadioButton
+                android:id="@+id/good2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good"
                 />
             <RadioButton
+                android:id="@+id/satisfactory2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Satisfactory"
                 />
             <RadioButton
+                android:id="@+id/unSatisfactory2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unsatisfactory"
@@ -206,28 +215,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView17">
 
             <RadioButton
-
+                android:id="@+id/excellent3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Excellent" />
 
             <RadioButton
-
+                android:id="@+id/very_good3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Very Good" />
             <RadioButton
+                android:id="@+id/good3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good"
                 />
             <RadioButton
+                android:id="@+id/satisfactory3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Satisfactory"
                 />
             <RadioButton
+                android:id="@+id/unSatisfactory3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unsatisfactory"
@@ -255,28 +267,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView18">
 
             <RadioButton
-
+                android:id="@+id/excellent4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Excellent" />
 
             <RadioButton
-
+                android:id="@+id/very_good4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Very Good" />
             <RadioButton
+                android:id="@+id/good4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good"
                 />
             <RadioButton
+                android:id="@+id/satisfactory4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Satisfactory"
                 />
             <RadioButton
+                android:id="@+id/unSatisfactory4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unsatisfactory"
@@ -304,28 +319,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView19">
 
             <RadioButton
-
+                android:id="@+id/excellent5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Excellent" />
 
             <RadioButton
-
+                android:id="@+id/very_good5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Very Good" />
             <RadioButton
+                android:id="@+id/good5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good"
                 />
             <RadioButton
+                android:id="@+id/satisfactory5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Satisfactory"
                 />
             <RadioButton
+                android:id="@+id/unSatisfactory5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unsatisfactory"
@@ -353,28 +371,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView20">
 
             <RadioButton
-
+                android:id="@+id/excellent1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Excellent" />
 
             <RadioButton
-
+                android:id="@+id/very_good"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Very Good" />
             <RadioButton
+                android:id="@+id/good"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good"
                 />
             <RadioButton
+                android:id="@+id/satisfactory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Satisfactory"
                 />
             <RadioButton
+                android:id="@+id/unSatisfactory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unsatisfactory"

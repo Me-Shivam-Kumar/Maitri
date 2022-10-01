@@ -22,6 +22,7 @@ import java.util.Map;
 public class LibraryFeedbackActivity extends AppCompatActivity {
     private RadioGroup radioGroup1,radioGroup2,radioGroup3,radioGroup4,radioGroup5,radioGroup6,radioGroup7;
     private String answer1,answer2,answer3,answer4,answer5,answer6,answer7;
+
     private EditText valuableSuggestion;
     private RadioButton radioButton;
     private FirebaseFirestore db;
@@ -89,26 +90,30 @@ public class LibraryFeedbackActivity extends AppCompatActivity {
                 answer7=radioButton.getText().toString();
             }
         });
-        String valSuggestion=valuableSuggestion.getText().toString();
-        Map<String,String> map=new HashMap<>();
-        map.put("Frequency of Library Visit",answer1);
-        map.put("Book Collection - Relevance",answer2);
-        map.put("Book Collection - Adequacy and Availability",answer3);
-        map.put("Book Collection - Variety",answer4);
-        map.put("Book Collection - Arrangement",answer5);
-        map.put("E-Resources - Relevance",answer6);
-        map.put("Staff - Helpfulness",answer7);
-        map.put("Suggestion",valSuggestion);
+
 
 
         submitFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(LibraryFeedbackActivity.this,answer1+answer2+answer4+answer5+answer6+answer7,Toast.LENGTH_SHORT).show();
+                String valSuggestion=valuableSuggestion.getText().toString();
+                Map<String,String> map=new HashMap<>();
+                map.put("Frequency of Library Visit",answer1);
+                map.put("Book Collection - Relevance",answer2);
+                map.put("Book Collection - Adequacy and Availability",answer3);
+                map.put("Book Collection - Variety",answer4);
+                map.put("Book Collection - Arrangement",answer5);
+                map.put("E-Resources - Relevance",answer6);
+                map.put("Staff - Helpfulness",answer7);
+                map.put("Suggestion",valSuggestion);
                 if(answer1!=null && answer2!=null && answer3!=null&& answer4!=null&& answer5!=null&& answer6!=null&& answer7!=null ){
                     db.collection("Feedback").add(map).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
                         @Override
                         public void onComplete(@NonNull Task<DocumentReference> task) {
                             if(task.isSuccessful()){
+
+                                valuableSuggestion.setText("");
                                 Toast.makeText(LibraryFeedbackActivity.this,"Your feedback had been recorded",Toast.LENGTH_SHORT).show();
                             }else{
                                 Toast.makeText(LibraryFeedbackActivity.this,"An error occurred. Please try again",Toast.LENGTH_SHORT).show();
