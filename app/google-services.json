@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "424003109452",
+    "project_id": "deverse-39934",
+    "storage_bucket": "deverse-39934.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424003109452:android:eb514f1406541e41ed2ae9",
+        "android_client_info": {
+          "package_name": "com.engage.maitri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424003109452-kcaqmiog4723psn1hn2cud30nl6sphee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.engage.maitri",
+            "certificate_hash": "60e16a63f8b23b6b84391cf25bd200a1b2006748"
+          }
+        },
+        {
+          "client_id": "424003109452-n6mjr94p6hdkfpjr5khgvl4i1tde47bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfVocFISY2ovRJevo1k-ZmBMpZ1IGDKJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424003109452-n6mjr94p6hdkfpjr5khgvl4i1tde47bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
