@@ -72,7 +72,7 @@ public class HomeFragment extends Fragment {
         }else if(jnm>=16 && jnm<21){
             greetings.setText("Good \nEvening");
         }else if(jnm>=21 && jnm<=24){
-            greetings.setText("Good \nNight");
+            greetings.setText("Hello \n");
         }else{
             greetings.setText("Hello");
 
